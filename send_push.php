@@ -45,7 +45,7 @@
 
     public function sendTo($userid){
       //creating different data lists for json file
-      $data = array('to' => $userid, 'message_type' => 'receipt' );
+      $data = array('to' => $userid);
       if($this->type == type::HDT){
         $data['data']=$this->data;
       }else if($this->type == type::NDT){
